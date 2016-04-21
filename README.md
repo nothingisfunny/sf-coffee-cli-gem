@@ -1,8 +1,6 @@
 # SfCoffee
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sf_coffee`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Scraper for popular San Francisco coffee shop locations. Collects information from Starbucks API, Peet's Coffee and Tea, and Philz Coffee websites. Lists information for each store, including name address, and phone number, allows one to search for nearest locations by ZIP Code.
 
 ## Installation
 
@@ -22,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+sf_coffee #runs the CLI
+```
+
+```ruby
+require 'sf_coffee'
+
+SfCoffee::Scraper.starbucks #lists all Starbucks locations in SF
+
+```
+###Example results
+```ruby
+[{:name=>"Starbucks Presidio & Letterman", :address=>"1 Letterman Drive, Building C, Letterman Digital Arts Center, San Francisco", :phone=>"415-441-1740", :zip_code=>"94129"},
+ {:name=>"Starbucks Third & Market", :address=>"7 Third Street, Third & Market, San Francisco", :phone=>"4159799530", :zip_code=>"94103"},
+ {:name=>"Starbucks Safeway - San Francisco #995", :address=>"1335 Webster, San Francisco", :phone=>"415-921-4557", :zip_code=>"94115"} ... ]
+```
 
 ## Development
 
@@ -32,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/sf_coffee.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nothingisfunny/sf-coffee-cli-gem.
 
 
 ## License
