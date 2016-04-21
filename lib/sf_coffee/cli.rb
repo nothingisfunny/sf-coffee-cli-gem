@@ -102,7 +102,7 @@ class SfCoffee::CLI
 					stores_with_zip << store
 				end
 			end
-			puts "Here is what we found for your request:"
+			puts "Here is what we found for your request:".blue
 			stores_with_zip.each_with_index do |store, index| 
 				puts "#{index+1}. Store name: ".yellow + "#{store[:name]}".yellow
 				puts "Address: #{store[:address]}, #{store[:zip_code]}".white
