@@ -1,6 +1,6 @@
 # SfCoffee
 
-Scraper for popular San Francisco coffee shop locations. Collects information from Starbucks API, Peet's Coffee and Tea, and Philz Coffee websites. Lists information for each store, including name address, and phone number, allows one to search for nearest locations by ZIP Code.
+Scraper for popular San Francisco coffee shop locations. Collects information from Starbucks API, Peet's Coffee and Tea, and Philz Coffee websites. Lists information for each store, including name, address, and phone number, allows one to search for nearest locations by ZIP Code.
 
 ## Installation
 
