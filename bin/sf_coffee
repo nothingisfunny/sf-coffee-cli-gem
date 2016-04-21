@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby 
-require './lib/sf_coffee'
+require_relative './lib/sf_coffee'
 
 SfCoffee::CLI.new.call
